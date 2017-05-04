@@ -6,6 +6,9 @@
   "repository": "https://github.com/switers-wang/react-study.git",
   "author": "switers",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack -w"
+  },
   "dependencies": {
     "webpack-dev-server": "^2.4.5"
   },
