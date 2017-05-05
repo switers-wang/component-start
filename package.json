@@ -7,7 +7,7 @@
   "author": "switers",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -w"
+    "dev": "node ./build/webpack.dev.js"
   },
   "dependencies": {
     "webpack-dev-server": "^2.4.5"

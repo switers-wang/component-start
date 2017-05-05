@@ -1,12 +1,11 @@
 /**
- * Created by wangxupeng on 2017/5/4.
+ * Created by wangxupeng on 2017/5/5.
  */
 import React from 'react';
 import ReactDom from 'react-dom';
+import Test from './Test';
 
 ReactDom.render(
-    <div>
-        <span>test</span>
-    </div>,
-    document.getElementById('study-react-redux')
+    <Test/>,
+    document.getElementById('study-react-redux'),
 );

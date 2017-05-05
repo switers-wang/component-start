@@ -1,14 +1,14 @@
 const path = require('path');
 const fs = require('fs');
-const ROOT_PATH = path.join(__dirname);
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const entryNameList = fs.readdirSync(path.join(ROOT_PATH, 'src/containers'));
+const entryNameList = fs.readdirSync(path.join(__dirname, 'src/containers'));
 
 const webpackConfig = {
     entry: {},
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist/'
     },
     module: {
         rules: [
@@ -23,9 +23,8 @@ const webpackConfig = {
 
 // setEntry
 entryNameList.forEach((entryName) => {
-    // objEntryList[item] = path.join(__dirname, 'src/containers', entryName, `index.js`);
     webpackConfig.entry[entryName] = [
-        path.resolve(__dirname, 'src/containers', entryName, `index.js`),
+        path.resolve(__dirname, 'src/containers', entryName, 'index.js'),
     ];
     webpackConfig.plugins.push(new HtmlWebpackPlugin({
         template: path.join(__dirname, 'src/templates/', 'index.html'),
