@@ -13,7 +13,6 @@ const sleep = (timeout) => {
 const copyFiles = (options) => {
     const { presets } = options;
     const files = [
-        'mock-server',
         'scripts',
         'template',
         '.eslintrc',
