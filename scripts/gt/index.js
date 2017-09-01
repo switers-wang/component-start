@@ -4,6 +4,12 @@
 
 import Listr from 'listr';
 
+const sleep = (timeout) => {
+    return new Promise((resolve) => {
+        setTimeout(resolve, timeout);
+    });
+};
+
 const copyFiles = (options) => {
     const { presets } = options;
     const files = [
