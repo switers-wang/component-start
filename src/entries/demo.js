@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import { render } from 'react-dom';
+import './demo.pcss';
 
 render(
     <div>{'hello world!'}</div>,

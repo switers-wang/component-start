@@ -88,7 +88,7 @@ const config = {
 };
 
 
-const entryFileNameList = glob.sync(path.join(SRC, '*/entries') + '/*.js');
+const entryFileNameList = glob.sync(path.join(SRC, '/entries') + '/*.js');
 entryFileNameList.forEach((item) => {
     const {
         entry,
