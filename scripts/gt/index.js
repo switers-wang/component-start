@@ -3,7 +3,6 @@
  */
 
 import Listr from 'listr';
-import execa from 'execa';
 
 const copyFiles = (options) => {
     const { presets } = options;
