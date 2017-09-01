@@ -17,7 +17,7 @@ const copyFiles = (options) => {
         'template',
         '.eslintrc',
         'scripts/dev.js',
-        'template',
+        'template/index.html',
         'src',
         '.babelrc',
         '.editorconfig',
