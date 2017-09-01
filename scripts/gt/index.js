@@ -16,11 +16,12 @@ const copyFiles = (options) => {
         'mock-server',
         'scripts',
         'template',
-        '.eslintrc',
         'src',
+        '.eslintrc',
         '.babelrc',
         '.gitignore',
         '.editorconfig',
+        'package.json',
     ];
     return async() => {
         await sleep(500);
