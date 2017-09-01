@@ -22,6 +22,7 @@ const copyFiles = (options) => {
         '.babelrc',
         '.editorconfig',
         '.gitignore',
+        '.editorconfig',
     ];
     return async() => {
         await sleep(500);
