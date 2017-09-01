@@ -10,6 +10,7 @@
     "dev": "cross-env NODE_ENV=development node ./scripts/dev.js"
   },
   "dependencies": {
+    "listr": "^0.12.0",
     "webpack-dev-server": "^2.4.5"
   },
   "devDependencies": {
