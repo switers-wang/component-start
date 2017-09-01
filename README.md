@@ -8,6 +8,8 @@
     gt config add your-project-name git@github.com:switers-wang/component-start.git
 
     gt init
+
+    select your-project-name
 ```
 
 ##  使用
@@ -15,6 +17,6 @@
 ```
 yarn   (安装依赖包)
 
-yarn run dev（打包）
+yarn run dev（本地开发）
 
 ```
