@@ -13,14 +13,12 @@ const sleep = (timeout) => {
 const copyFiles = (options) => {
     const { presets } = options;
     const files = [
+        'mock-server',
         'scripts',
         'template',
         '.eslintrc',
-        'scripts/dev.js',
-        'template/index.html',
         'src',
         '.babelrc',
-        '.editorconfig',
         '.gitignore',
         '.editorconfig',
     ];
